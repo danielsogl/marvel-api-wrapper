@@ -4,6 +4,11 @@ import { generateHash } from './crypto';
 import { API_ENDPOINT, PUBLIC_KEY } from './secrets';
 import { getTimestamp } from './utility';
 
+/**
+ * Builds the request URL
+ * @param {string} requestUrl Request URL
+ * @returns {string} URL
+ */
 export function buildUrl(requestUrl: string): string {
   let url = `${API_ENDPOINT}${requestUrl}`;
   const timestamp = getTimestamp();
