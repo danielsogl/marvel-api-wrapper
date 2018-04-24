@@ -1,0 +1,70 @@
+{
+  "name": "marvel-db-api-new",
+  "version": "1.0.1",
+  "author": "Daniel Sogl",
+  "description": "A simple to use Marvel API wrapper powered by Express.js and TypeScript",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielsogl/marvel-db-api.git"
+  },
+  "main": "./dist/server.js",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "npm run serve",
+    "build": "npm run clean && npm run build-ts && npm run tslint",
+    "clean": "rimraf -rf dist && mkdir dist",
+    "serve": "node ./dist/server.js",
+    "watch-node": "nodemon dist/server.js",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
+    "test": "jest --forceExit --coverage --verbose",
+    "watch-test": "npm run test -- --watchAll",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "debug": "npm run build && npm run watch-debug",
+    "serve-debug": "nodemon --inspect dist/server.js",
+    "watch-debug": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run serve-debug\""
+  },
+  "engines": {
+    "node": "latest"
+  },
+  "dependencies": {
+    "apicache": "^1.2.1",
+    "compression": "^1.7.2",
+    "cors": "^2.8.4",
+    "crypto": "^1.0.1",
+    "dotenv": "^5.0.1",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "helmet": "^3.12.0",
+    "pjson": "^1.0.9",
+    "redis": "^2.8.0",
+    "request": "^2.85.0",
+    "url-params": "^1.0.2",
+    "winston": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/compression": "0.0.36",
+    "@types/cors": "^2.8.4",
+    "@types/dotenv": "^4.0.3",
+    "@types/errorhandler": "0.0.32",
+    "@types/express": "^4.11.1",
+    "@types/helmet": "0.0.37",
+    "@types/jest": "^22.2.3",
+    "@types/node": "^9.6.6",
+    "@types/redis": "^2.8.6",
+    "@types/request": "^2.47.0",
+    "@types/supertest": "^2.0.4",
+    "@types/winston": "^2.3.9",
+    "concurrently": "^3.5.1",
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.3",
+    "rimraf": "^2.6.2",
+    "supertest": "^3.0.0",
+    "ts-jest": "^22.4.4",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.3"
+  }
+}
