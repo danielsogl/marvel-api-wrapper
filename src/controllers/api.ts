@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
+import pjson from 'pjson';
 import request from 'request';
-const pjson = require('pjson');
+
 import { buildUrl } from '../util/url-builder';
 
 export let getApi = (req: Request, res: Response) => {
