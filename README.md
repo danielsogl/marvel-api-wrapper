@@ -1,4 +1,5 @@
 # Marvel API Wrapper
+[![Build Status](https://travis-ci.org/danielsogl/marvel-api-wrapper.svg?branch=master)](https://travis-ci.org/danielsogl/marvel-api-wrapper)
 
 A simple to use Marvel API wrapper powered by [Express.js](http://expressjs.com/de/) and [TypeScript](https://www.typescriptlang.org)
 
