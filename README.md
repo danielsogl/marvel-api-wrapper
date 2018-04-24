@@ -1,4 +1,5 @@
 # Marvel API Wrapper
+
 [![Build Status](https://travis-ci.org/danielsogl/marvel-api-wrapper.svg?branch=master)](https://travis-ci.org/danielsogl/marvel-api-wrapper)
 
 A simple to use Marvel API wrapper powered by [Express.js](http://expressjs.com/de/) and [TypeScript](https://www.typescriptlang.org)
@@ -56,3 +57,4 @@ I recommend using [Heroku](https://www.heroku.com) to deploy this repository bec
 ## Test
 
 I added basic unit tests to this repository. You find them inside the `./tests` folder. Feel free to add your own.
+To run the tests just run `npm run tests`.
