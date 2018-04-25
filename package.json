@@ -1,6 +1,6 @@
 {
   "name": "marvel-db-api-new",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "Daniel Sogl",
   "description": "A simple to use Marvel API wrapper powered by Express.js and TypeScript",
   "license": "MIT",
