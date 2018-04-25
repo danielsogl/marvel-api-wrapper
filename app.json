@@ -1,0 +1,7 @@
+{
+  "name": "Marvel API Wrapper",
+  "description": "A simple to use Marvel API wrapper powered by Express.js and TypeScript",
+  "repository": "https://github.com/danielsogl/marvel-api-wrapper",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Marvel-Comics-Logo.svg/411px-Marvel-Comics-Logo.svg.png",
+  "keywords": ["node", "express", "marvel", "api-wrapper", "typescript"]
+}
