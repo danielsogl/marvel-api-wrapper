@@ -1,14 +1,20 @@
+import axios from 'axios';
 import { Request, Response } from 'express';
 import pjson from 'pjson';
-import request from 'request';
 
 import { buildUrl } from '../util/url-builder';
 
 export let getApi = (req: Request, res: Response) => {
-  request(buildUrl(req.url), (error, response, body) => {
-    res.status(response.statusCode);
-    res.json(JSON.parse(body));
-  });
+  axios
+    .get(buildUrl(req.url))
+    .then(response => {
+      res.status(response.status);
+      res.json(response.data);
+    })
+    .catch(err => {
+      res.status(501);
+      res.send('Internal Server Error');
+    });
 };
 
 export let getInfo = (req: Request, res: Response) => {
