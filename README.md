@@ -54,6 +54,8 @@ Run `npm run build` and the compiled `*.js` files are placed inside the `dist` f
 
 I recommend using [Heroku](https://www.heroku.com) to deploy this repository because of nearly zero configuration and zero costs. Heroku also gives you the ability to use Redis as in-memory-database. The repository is already configured to run out of the box on Heroku.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/danielsogl/marvel-api-wrapper)
+
 ## Test
 
 I added basic unit tests to this repository. You find them inside the `./tests` folder. Feel free to add your own.
