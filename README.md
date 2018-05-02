@@ -2,9 +2,10 @@
 
 [![Build Status](https://travis-ci.org/danielsogl/marvel-api-wrapper.svg?branch=master)](https://travis-ci.org/danielsogl/marvel-api-wrapper)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/danielsogl/marvel-api-wrapper)
-
 A simple to use Marvel API wrapper powered by [Express.js](http://expressjs.com/de/) and [TypeScript](https://www.typescriptlang.org)
+
+![Marvel logo](https://upload.wikimedia.org/wikipedia/commons/0/04/MarvelLogo.svg "Marvel API Wrapper")
+
 
 ## About
 
