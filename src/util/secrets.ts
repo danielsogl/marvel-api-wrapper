@@ -13,7 +13,6 @@ const prod = ENVIRONMENT === 'production'; // Anything else is treated as 'dev'
 
 export const PUBLIC_KEY = process.env['PUBLIC_KEY'];
 export const PRIVATE_KEY = process.env['PRIVATE_KEY'];
-export const API_ENDPOINT = process.env['API_ENDPOINT'];
 export const REDIS_URL = process.env['REDIS_URL'];
 
 if (!PUBLIC_KEY) {
@@ -23,10 +22,5 @@ if (!PUBLIC_KEY) {
 
 if (!PRIVATE_KEY) {
   logger.error('No private api key. Set PRIVATE_KEY environment variable.');
-  process.exit(1);
-}
-
-if (!API_ENDPOINT) {
-  logger.error('No api endpoint. Set API_ENDPOINT environment variable.');
   process.exit(1);
 }

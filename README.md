@@ -4,8 +4,7 @@
 
 A simple to use Marvel API wrapper powered by [Express.js](http://expressjs.com/de/) and [TypeScript](https://www.typescriptlang.org)
 
-![Marvel logo](https://upload.wikimedia.org/wikipedia/commons/0/04/MarvelLogo.svg "Marvel API Wrapper")
-
+![Marvel logo](https://upload.wikimedia.org/wikipedia/commons/0/04/MarvelLogo.svg 'Marvel API Wrapper')
 
 ## About
 
@@ -40,13 +39,7 @@ PUBLIC_KEY=12345
 PRIVATE_KEY=12345
 ```
 
-3.  Place the current API endpoint URL inside the `.env` file:
-
-```text
-API_ENDPOINT=https://gateway.marvel.com/v1/public
-```
-
-4.  Start the server by running the `npm run watch` command.
+3.  Start the server by running the `npm run watch` command.
 
 ## Build
 

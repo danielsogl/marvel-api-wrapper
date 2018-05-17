@@ -1,7 +1,8 @@
 import { add } from 'url-params';
 
 import { generateHash } from './crypto';
-import { API_ENDPOINT, PUBLIC_KEY } from './secrets';
+import { PUBLIC_KEY } from './secrets';
+import { API_ENDPOINT } from './settings';
 import { getTimestamp } from './utility';
 
 /**

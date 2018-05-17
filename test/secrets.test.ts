@@ -1,9 +1,4 @@
-import {
-  API_ENDPOINT,
-  ENVIRONMENT,
-  PRIVATE_KEY,
-  PUBLIC_KEY
-} from '../src/util/secrets';
+import { ENVIRONMENT, PRIVATE_KEY, PUBLIC_KEY } from '../src/util/secrets';
 
 describe('Secrets', () => {
   it('should return environment', () => {
@@ -16,9 +11,5 @@ describe('Secrets', () => {
 
   it('should return private key', () => {
     expect(PRIVATE_KEY).toBeDefined();
-  });
-
-  it('should return endpoint url', () => {
-    expect(API_ENDPOINT).toBeDefined();
   });
 });
